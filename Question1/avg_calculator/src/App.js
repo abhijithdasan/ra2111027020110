@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { fetchNumbers } from './components/api';
-
+import { fetchNumbers } from './components/api'; 
 function App() {
   const [numbers, setNumbers] = useState([]);
   const [windowPrevState, setWindowPrevState] = useState([]);
@@ -51,6 +50,7 @@ function App() {
         <p>{average !== null ? average : 'No data'}</p>
       </div>
       <div>
+        {/* Use onClick event handlers to call handleFetchNumbers with the appropriate type */}
         <button onClick={() => handleFetchNumbers('p')}>Fetch Prime Numbers</button>
         <button onClick={() => handleFetchNumbers('f')}>Fetch Fibonacci Numbers</button>
         <button onClick={() => handleFetchNumbers('e')}>Fetch Even Numbers</button>

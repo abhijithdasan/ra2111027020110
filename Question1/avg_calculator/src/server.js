@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 const windowSize = 10;
 let storedNumbers = [];
 
-
+    
 async function fetchNumbers(type) {
     const response = await axios.get(`http://20.244.56.144/test/${type}`);
     return response.data.numbers;
