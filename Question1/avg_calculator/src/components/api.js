@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:9876'; // Update this URL with your microservice URL
+const BASE_URL = 'http://localhost:9876'; 
 
 const api = axios.create({
   baseURL: BASE_URL,

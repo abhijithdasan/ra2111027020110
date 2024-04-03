@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { fetchNumbers } from './components/api'; // Import the fetchNumbers function from api.js
+import { fetchNumbers } from './components/api';
 
 function App() {
   const [numbers, setNumbers] = useState([]);
@@ -22,39 +22,39 @@ function App() {
   return (
     <div className="App">
       <h1>Average Calculator Microservice</h1>
-      <div>
-        <button onClick={() => handleFetchNumbers('p')}>Fetch Prime Numbers</button>
-        <button onClick={() => handleFetchNumbers('f')}>Fetch Fibonacci Numbers</button>
-        <button onClick={() => handleFetchNumbers('e')}>Fetch Even Numbers</button>
-        <button onClick={() => handleFetchNumbers('r')}>Fetch Random Numbers</button>
-      </div>
-      <div>
-        <h2>Numbers:</h2>
+      <div className="card">
+        <div className="card-header">Numbers:</div>
         <ul>
           {numbers.map((number, index) => (
             <li key={index}>{number}</li>
           ))}
         </ul>
       </div>
-      <div>
-        <h2>Window Previous State:</h2>
+      <div className="card">
+        <div className="card-header">Window Previous State:</div>
         <ul>
           {windowPrevState.map((number, index) => (
             <li key={index}>{number}</li>
           ))}
         </ul>
       </div>
-      <div>
-        <h2>Window Current State:</h2>
+      <div className="card">
+        <div className="card-header">Window Current State:</div>
         <ul>
           {windowCurrState.map((number, index) => (
             <li key={index}>{number}</li>
           ))}
         </ul>
       </div>
-      <div>
-        <h2>Average:</h2>
+      <div className="card">
+        <div className="card-header">Average:</div>
         <p>{average !== null ? average : 'No data'}</p>
+      </div>
+      <div>
+        <button onClick={() => handleFetchNumbers('p')}>Fetch Prime Numbers</button>
+        <button onClick={() => handleFetchNumbers('f')}>Fetch Fibonacci Numbers</button>
+        <button onClick={() => handleFetchNumbers('e')}>Fetch Even Numbers</button>
+        <button onClick={() => handleFetchNumbers('r')}>Fetch Random Numbers</button>
       </div>
     </div>
   );
