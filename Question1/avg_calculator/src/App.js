@@ -22,7 +22,8 @@ function App() {
     <div className="App">
       <h1>Average Calculator Microservice</h1>
       <div className="card">
-        <div className="card-header">Numbers:</div>
+        <div className="card-header">Numbers:<br />
+        <input type='text'></input></div>
         <ul>
           {numbers.map((number, index) => (
             <li key={index}>{number}</li>
@@ -30,7 +31,7 @@ function App() {
         </ul>
       </div>
       <div className="card">
-        <div className="card-header">Window Previous State:</div>
+        <div className="card-header">Window Previous State:<br /><input type='text'></input></div>
         <ul>
           {windowPrevState.map((number, index) => (
             <li key={index}>{number}</li>
@@ -38,7 +39,7 @@ function App() {
         </ul>
       </div>
       <div className="card">
-        <div className="card-header">Window Current State:</div>
+        <div className="card-header">Window Current State:<br /><input type='text'></input></div>
         <ul>
           {windowCurrState.map((number, index) => (
             <li key={index}>{number}</li>
