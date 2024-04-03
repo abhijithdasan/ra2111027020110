@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Card, CardContent, Typography } from '@material-ui/core'; // Add this import
+import { Card, CardContent, Typography } from '@material-ui/core'; 
 
 const AllProducts = () => (
   <div>
