@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Button, Typography, Container } from '@material-ui/core'; // Import Material-UI components
+import { Button, Typography, Container } from '@material-ui/core'; 
 
 ReactDOM.render(
   <React.StrictMode>

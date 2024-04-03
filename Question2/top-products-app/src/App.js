@@ -26,7 +26,7 @@ const AllProducts = () => (
         <Typography color="textSecondary">
           Availability: In stock
         </Typography>
-        {/* Add more product cards as needed */}
+        
       </CardContent>
     </Card>
   </div>
@@ -43,7 +43,7 @@ const ProductDetails = ({ match }) => (
     <p>Discount: 10% off</p>
     <p>Availability: In stock</p>
     <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    {/* Fetch and display product details based on ID */}
+    
   </div>
 );
 
